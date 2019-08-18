@@ -1,3 +1,3 @@
-## TESTING OUT THE PHASER API
+## MAGE GAME
 
 To be updated...
