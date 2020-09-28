@@ -32,10 +32,6 @@ export class LoadScene extends Phaser.Scene{
 
         //simulate heavy loading
         for(let i = 0; i < 10; i++){
-            this.load.spritesheet("sprits" + i, "../../assets/sprites/maleorcfullsheet.png", {
-                frameHeight: 32,
-                frameWidth: 32
-            });
         }
 
         this.load.on("progress", (percent)=>{

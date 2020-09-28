@@ -16,6 +16,8 @@ export class MenuScene extends Phaser.Scene{
         let playButton = this.add.image(this.plugins.game.renderer.width /2, this.plugins.game.renderer.height * 0.5, CST.IMAGES.PLAYBUTT).setDepth(1);
         let options_button = this.add.image(this.plugins.game.renderer.width /2, this.plugins.game.renderer.height * 0.4, CST.IMAGES.OPTBUTT).setDepth(1);
 
+        this.input.setGlobalTopOnly(false);
+
         //Configure buttons
         playButton.setInteractive();
 
@@ -24,8 +26,7 @@ export class MenuScene extends Phaser.Scene{
         })
 
         playButton.on("pointerdown", ()=>{
-            console.log("PLAYYYYYYYY");
-            this.scene.start(CST.SCENES.PLAY, "hello from menu scene");
+            this.scene.start(CST.SCENES.PLAY);
         })
 
         //sound!
